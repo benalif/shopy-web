@@ -1,3 +1,203 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Open Sans, sans-serif;
+  background-color: #222;
+}
+
+/* header css*/
+.navbar {
+  background-color: #421b0b;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.footer {
+  background-color: #421b0b;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.footer p {
+  margin: 0;
+  color: white;
+  text-align: right;
+}
+
+.logo a {
+  background-image: url(https://static.frontendmasters.com/assets/fm/js/frontendmasters.80c0a9606c.svg);
+  display: block;
+  width: 250px;
+  height: 40px;
+  margin-top: 5px;
+}
+
+.navbar-list {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.nav-items {
+  color: #738aaa;
+  margin-right: 20px;
+  text-decoration: none;
+  font-family: inherit;
+}
+
+.nav-items:hover {
+  color: white;
+}
+
+/*login css*/
+
+.login-title {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.flex-container {
+  height: 100vh;
+  display: flex; /* establish flex container */
+  flex-direction: row; /* make main axis vertical */
+  justify-content: space-between; /* center items vertically, in this case */
+  align-items: stretch; /* center items horizontally, in this case */
+}
+
+div.img-login {
+  background-color: #421b0b;
+  width: 50%;
+}
+
+@media only screen and (max-width: 1000px) {
+  div.img-login {
+    display: none;
+  }
+
+  .flex-container {
+    height: 100vh;
+    display: flex; /* establish flex container */
+    flex-direction: row; /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+    align-items: stretch; /* center items horizontally, in this case */
+  }
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+.label {
+  color: #fff;
+}
+
+.signin-input {
+  margin: 10px;
+  border: 1px solid #1976d2;
+  border-radius: 5px;
+  font-family: inherit;
+  padding: 8px 10px;
+  width: 500px;
+}
+.signin-input:focus {
+  border-color: #e66225;
+  outline: 0;
+}
+.button {
+  border: none;
+  border-radius: 5px;
+  width: 150px;
+  height: 30px;
+  font-family: inherit;
+  color: #fff;
+  background-color: #1976d2;
+  font-weight: bold;
+}
+.button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.button:hover {
+  background-color: rgb(17, 82, 147);
+  cursor: pointer;
+}
+
+/*home css*/
+
+.search-container {
+  margin: 100px;
+}
+
+.search-container p {
+  color: white;
+  margin: 0;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.search-container h7 {
+  color: white;
+  margin-top: 30px;
+  font-size: 20px;
+
+  font-weight: bolder;
+}
+
+.search-box {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.search-input {
+  margin: 10px;
+  height: 50px;
+  width: 600px;
+  padding: 5px 18px;
+  border-radius: 50px;
+  border: 1px solid #e66225;
+  font-size: 15px;
+}
+.metiers-types {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.box {
+  height: 100px;
+  width: 200px;
+  margin: 20px;
+  background-color: #f6f5f9;
+  border-radius: 0.5rem;
+}
+.box:hover {
+  background-color: #f1eff5;
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
 .App {
   text-align: center;
 }
