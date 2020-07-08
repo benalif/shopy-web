@@ -9,7 +9,7 @@ html {
 
 body {
   font-family: Open Sans, sans-serif;
-  background-color: #222;
+  background-color: #white;
 }
 
 /* header css*/
@@ -55,20 +55,20 @@ body {
 }
 
 .nav-items {
-  color: #738aaa;
+  color: white;
   margin-right: 20px;
   text-decoration: none;
   font-family: inherit;
 }
 
 .nav-items:hover {
-  color: white;
+  color: #738aaa;
 }
 
 /*login css*/
 
 .login-title {
-  color: white;
+  color: black;
   font-weight: bold;
   font-size: 30px;
 }
@@ -82,8 +82,37 @@ body {
 }
 
 div.img-login {
-  background-color: #421b0b;
+  background: url("https://www.urban.org/sites/default/files/styles/feature2_full_hero/public/feature2/jobs-feature-header-1700x700.png?itok=8lB15_K3")
+    no-repeat;
+  background-size: auto 100%;
   width: 50%;
+}
+
+.social-media-button {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  background-color: white;
+  margin: 10px;
+  border-radius: 5px;
+  width: 500px;
+  padding: 5px 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.social-media-button:hover {
+  color: #330691;
+  border: 2px solid #3f27ba;
+  cursor: pointer;
+}
+/*how to*/
+.step-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.step {
+  width: 25%;
 }
 
 @media only screen and (max-width: 1000px) {

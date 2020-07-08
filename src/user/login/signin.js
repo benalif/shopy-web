@@ -33,9 +33,7 @@ export default function Login() {
   return (
     <div className="global">
       <div className="flex-container">
-        <div className="img-login">
-          <h1>this is a test</h1>
-        </div>
+        <div className="img-login"></div>
         <form
           className="card"
           onSubmit={(e) => {
@@ -65,6 +63,15 @@ export default function Login() {
           ></input>
           <button className="button">LOGIN</button>
           <p>{messageError}</p>
+          <p style={{ color: "black" }}>Ou continuer simplement avec</p>
+          <div className="social-media-button">
+            <img></img>
+            <p>Google/Gmail</p>
+          </div>
+          <div className="social-media-button">
+            <img></img>
+            <p>Facebook</p>
+          </div>
         </form>
       </div>
     </div>
